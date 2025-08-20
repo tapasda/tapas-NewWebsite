@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tapas Chakraborty - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h2 {
+            color: #0077b6;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: square;
+        }
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .project-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #0077b6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .download-btn:hover {
+            background: #005f87;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        /* ✅ Mobile-friendly (Responsive Design) */
+        @media (max-width: 768px) {
+            .projects {
+                grid-template-columns: 1fr;
+            }
+            header img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="tapas.jpg" alt="Tapas Chakraborty">
+        <h1>Tapas Chakraborty 👨‍💻</h1>
+        <p>Microsoft Certified IT Professional | Cloud & Infrastructure Engineer</p>
+        <!-- ✅ Download Resume Button -->
+        <a href="resume.pdf" class="download-btn" download>📄 Download Resume</a>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>I’m a Microsoft-certified IT professional with 10+ years of experience in IT Support, System Administration, and Cloud Technologies. I specialize in Azure, Office 365, Microsoft Defender, Cisco networking, and IT infrastructure management.</p>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Azure & Cloud Engineering</li>
+            <li>System Administration (Windows & Linux)</li>
+            <li>Networking (Cisco, Fortinet, Palo Alto)</li>
+            <li>IT Security (Defender, Firewalls)</li>
+            <li>ServiceNow, ITIL, Ticketing Tools</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Cloud Migration Project</h3>
+                <p>Migrated on-premise workloads to Microsoft Azure with high availability and security compliance.</p>
+            </div>
+            <div class="project-card">
+                <h3>Network Security Upgrade</h3>
+                <p>Implemented Palo Alto and Fortinet firewalls to enhance enterprise-level security.</p>
+            </div>
+            <div class="project-card">
+                <h3>Office 365 Deployment</h3>
+                <p>Deployed and optimized Microsoft 365 services (Exchange Online, Teams, OneDrive) for 500+ users.</p>
+            </div>
+            <div class="project-card">
+                <h3>Disaster Recovery Setup</h3>
+                <p>Designed and tested DR solutions ensuring business continuity with minimal downtime.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact</h2>
+        <p>Email: tapasda_chakraborty@hotmail.com</p>
+        <p>Phone: +91-7980787690</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Tapas Chakraborty | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
